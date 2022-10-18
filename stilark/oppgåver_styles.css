@@ -1,0 +1,100 @@
+body {
+    background-color: #1d2a35;
+    margin: 0;
+}
+
+.horisontal-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    
+}
+
+.navigation-links {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+.navigation-links a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#about {
+    float: right;
+}
+
+#MDN_docs {
+    background-color: green;
+}
+
+.navigation-links a:hover:not(.active) {
+    background-color: #111;
+}
+
+.navigation-links:last-child {
+    border-right: none;
+}
+
+.active {
+    background-color: #111;
+}
+
+.vertical-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    background-color: grey;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    transition: all 0.2s ease;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.vertical-bar:hover {
+    width: 200px;
+}
+
+.vertical-bar:hover .task-links a {
+    display: block;
+}
+
+.task-links a {
+    display: none;
+    color: #000;
+    padding: 8px 16px; 
+    text-decoration: none;
+}
+
+.task-links a.active {
+    background-color: #333;
+    color: white;
+}
+.task-links a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    
+}
+
+.information {
+    margin-left: 20%;
+    color: white;
+}
+
+p {
+    max-width: 500px;
+}
+
+#gaming-pc {
+    max-width: 400px;
+    max-height: 400px;
+}
