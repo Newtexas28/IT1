@@ -1,0 +1,22 @@
+body {
+    background-color: #1d2a35;
+    color: white;
+    font-family: Georgia, serif; 
+}
+
+#oppg-a {
+    background-color: #75c3cd;
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 15%;
+}
+
+
+
+li {
+    background-color: #75c3cd;
+    margin: 3px;
+    padding: 5px;
+    max-width: 300px;
+    border-radius: 25%;
+}
