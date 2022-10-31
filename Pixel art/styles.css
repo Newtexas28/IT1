@@ -1,0 +1,217 @@
+/* Angir ein bakgrunnsfarge */
+body {
+    background-color:  #bdc1c6;
+}
+/* Agir max storleik på tekst*/
+p {
+    max-width: 500px;
+}
+/* Lager ein stil for lenka */
+a {
+    background-color: black;
+    color: greenyellow;
+}
+
+
+.img {
+    margin-top: 300px;
+}
+
+/* Lager ein stil for hovud div-en og angir storleiken av div-en */
+
+div#hovud {
+    width: 180px;
+    height: 220px;
+    border: 4px solid grey;
+    background-color: white;
+    margin: 50px
+    
+}
+
+div {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+/* Anngir fargene til pixel-figuren i classene svart og grønn*/
+.svart {
+    background-color: black;
+}
+
+.grønn {
+    background-color: rgb(26, 169, 26);
+}
+
+/* Lager rader og kononner for dei ulike pixlenen */
+.r0 {
+    top: 0px;
+}
+
+.r1 {
+    top: 10px;
+}
+
+.r2 {
+    top: 20px;
+}
+
+.r3 {
+    top: 30px;
+}
+
+.r4 {
+    top: 40px;
+}
+
+.r5 {
+    top: 50px;
+}
+
+.r6 {
+    top: 60px;
+}
+
+.r7 {
+    top: 70px;
+}
+
+.r8 {
+    top: 80px;
+}
+
+.r9 {
+    top: 90px;
+}
+
+.r10 {
+    top: 100px;
+}
+
+.r11 {
+    top: 110px;
+}
+
+.r12 {
+    top: 120px;
+}
+
+.r13 {
+    top: 130px;
+}
+
+.r14 {
+    top: 140px;
+}
+
+.r15 {
+    top: 150px;
+}
+
+.r16 {
+    top: 160px;
+}
+
+.r17 {
+    top: 170px;
+}
+
+.r18 {
+    top: 180px;
+}
+
+.r19 {
+    top: 190px;
+}
+
+.r20 {
+    top: 200px;
+}
+
+.r21 {
+    top: 210px
+}
+
+.c0 {
+   left: 0px; 
+}
+
+.c1 {
+    left: 10px; 
+}
+
+.c2 {
+    left: 20px; 
+}
+ 
+.c3 {
+    left: 30px; 
+}
+
+.c4 {
+   left: 40px; 
+}
+ 
+.c5 {
+    left: 50px; 
+}
+
+.c6 {
+   left: 60px; 
+}
+ 
+.c7 {
+    left: 70px; 
+}
+
+.c8 {
+   left: 80px; 
+}
+ 
+.c9 {
+    left: 90px; 
+}
+
+.c10 {
+   left: 100px; 
+}
+ 
+.c11 {
+    left: 110px; 
+}
+
+.c12 {
+    left: 120px; 
+}
+
+.c13 {
+    left: 130px; 
+}
+
+.c14 {
+    left: 140px; 
+}
+
+.c15 {
+    left: 150px; 
+}
+
+.c16 {
+    left: 160px; 
+}
+
+.c17 {
+    left: 170px; 
+}
+
+.c18 {
+    left: 180px; 
+}
+
+.c19 {
+    left: 190px; 
+}
+
+.c20 {
+    left: 200px; 
+}
