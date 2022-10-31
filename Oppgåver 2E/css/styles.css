@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(51, 56, 71, 0.742);
+}
+
+#first_element {
+    border: 2px white solid;
+    background-color: rgb(14, 32, 97);
+}
+
+#last_element {
+    border: 2px white solid;
+    background-color:aqua;
+}
