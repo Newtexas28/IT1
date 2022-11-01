@@ -1,0 +1,51 @@
+body {
+    background-color: #1d2a35;
+}
+
+h1, p {
+    color: white;
+}
+
+#figur {
+    display: flex;
+}
+
+.ring {
+    flex-basis: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.blå {
+    background-color: #0085C7;
+    position: absolute;
+    
+}
+
+.gul {
+    background-color: #F4C300;
+    position: relative;
+    right: 30px;
+    bottom: -30px;
+}
+
+.svart {
+    background-color: #000000;
+    position: relative;
+    right: 60px;
+    
+}
+
+.grønn {
+    background-color: #009F3D;
+    position: relative;
+    right: 90px;
+    bottom: -30px;
+}
+
+.raud {
+    background-color: #df0024;
+    position: relative;
+    right: 120px;
+}
