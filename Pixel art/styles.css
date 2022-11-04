@@ -2,7 +2,7 @@
 body {
     background-color:  #bdc1c6;
 }
-/* Agir max storleik på tekst*/
+/* Angir max storleik på tekst*/
 p {
     max-width: 500px;
 }

@@ -11,41 +11,42 @@ h1, p {
 }
 
 .ring {
-    flex-basis: 60px;
     width: 60px;
     height: 60px;
     border-radius: 100%;
 }
 
 .blå {
-    background-color: #0085C7;
-    position: absolute;
-    
+    background-color: transparent;
+    position: relative;
+    border: #0085C7 2px solid;
+    right: 132px;
 }
 
 .gul {
-    background-color: #F4C300;
+    border: #F4C300 2px solid;
+    background-color: transparent;
     position: relative;
-    right: 30px;
+    left: 30px;
     bottom: -30px;
 }
 
 .svart {
-    background-color: #000000;
+    border: #000000 2px solid;
     position: relative;
-    right: 60px;
+    right: 128px;
     
 }
 
 .grønn {
-    background-color: #009F3D;
+    border: #009F3D 2px solid;
     position: relative;
-    right: 90px;
+    right: 160px;
     bottom: -30px;
 }
 
 .raud {
-    background-color: #df0024;
+    border: #df0024 2px solid;
     position: relative;
-    right: 120px;
+    right: -68px;
 }
