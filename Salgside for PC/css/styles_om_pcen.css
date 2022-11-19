@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #1d2a35;
+    font-family: "Roberto";
+}
+
+#main {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-rows: 10fr;
+    grid-template-areas: " m "
+                         " h "
+                         " c "
+                         " f ";
+}
+
+.headder { 
+    grid-area: h; 
+    text-align: center; 
+}
+
+.menu    { 
+    grid-area: m; 
+    text-align: center; 
+}
+
+.content { 
+    grid-area: c;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.fotter  { 
+    grid-area: f; 
+    text-align: center; 
+    padding-left: 35vw;
+    padding-top: 5vh;
+}
+
+img {
+    width: 45vw;
+    border-radius: 15px 15px;
+}
+
+#About-PC {
+    display: grid;
+    width: auto;
+    height: auto;
+    gap: 5px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#About-PC > div {
+    width: 45vw;
+    height: 96vh;
+    background-color: darkgrey;
+    border: 10px solid black;
+    border-radius: 25px 25px;    
+}
+
+.text {
+    padding-left: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-bottom: 2px solid #3f4259;
+}
+
+th, td {
+    border: 1px solid #f6f5f4;
+    padding: 8px;
+}
+
+thead > tr {
+    background-color: #3f4259;
+    color: #f6f7fa;
+}
+
+tbody > tr {
+    background-color: #f6f7fa;
+}   
