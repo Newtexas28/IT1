@@ -52,8 +52,6 @@ img {
     gap: 5px;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
 }
 
 #About-PC > div {
