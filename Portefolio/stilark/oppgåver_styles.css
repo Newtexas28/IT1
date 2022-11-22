@@ -3,50 +3,6 @@ body {
     margin: 0;
 }
 
-.horisontal-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    
-}
-
-.navigation-links {
-    float: left;
-    border-right: 1px solid #bbb;
-}
-.navigation-links a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#about {
-    float: right;
-}
-
-#MDN_docs {
-    background-color: green;
-}
-
-.navigation-links a:hover:not(.active) {
-    background-color: #111;
-}
-
-.navigation-links:last-child {
-    border-right: none;
-}
-
-.active {
-    background-color: #111;
-}
-
 .vertical-bar {
     list-style-type: none;
     margin: 0;
@@ -95,6 +51,5 @@ p {
 }
 
 #gaming-pc {
-    max-width: 400px;
-    max-height: 400px;
+    width: 10vw;
 }
