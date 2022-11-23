@@ -18,7 +18,6 @@ body {
 }
 
 
-
 .headder { 
     grid-area: h; 
     text-align: center; 
@@ -34,7 +33,7 @@ body {
     margin-left: 25vw;
  }
 
- .fotter  { 
+.fotter  { 
     grid-area: f; 
     text-align: center; 
 }

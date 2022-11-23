@@ -30,6 +30,14 @@
     background-color: green;
 }
 
+#Git_Hub {
+    background-color: lightskyblue;
+}
+
+#Aunivers_lokus_no {
+    background-color: yellowgreen;
+}
+
 .navigation-links a:hover:not(.active) {
     background-color: #111;
 }

@@ -1,5 +1,44 @@
 body {
-    background-color: rgb(248, 243, 243);
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #1d2a35;
+    font-family: "Roberto";
+}
+
+#main {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-rows: 10fr;
+    grid-template-areas: " m "
+                         " h "
+                         " c "
+                         " f ";
+}
+
+header { 
+    grid-area: h; 
+    text-align: center; 
+}
+
+menu    { 
+    grid-area: m; 
+    text-align: center;
+    margin: 0;
+    padding: 0; 
+}
+
+main { 
+    grid-area: c;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+footer  { 
+    grid-area: f; 
+    text-align: center; 
+    padding-top: 5vh;
 }
 
 p {
