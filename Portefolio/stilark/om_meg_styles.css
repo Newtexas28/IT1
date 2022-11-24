@@ -6,24 +6,23 @@ body {
     font-family: "Roberto";
 }
 
-#main {
+#main_grid {
     display: grid;
     width: auto;
     height: auto;
-    grid-template-rows: 15vh 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: " m "
                          " h "
                          " c "
                          " f ";
 }
 
-
 header { 
     grid-area: h; 
     text-align: center; 
 }
 
-menu    { 
+.menu { 
     grid-area: m; 
     text-align: center; 
     margin: 0;
@@ -32,12 +31,13 @@ menu    {
 
 main { 
     grid-area: c;
-    margin-left: 25vw;
+    text-align: center;
+    
  }
 
-footer  { 
+footer { 
     grid-area: f; 
-    text-align: center; 
+    text-align: center;
 }
 
 .information-about-me {
@@ -46,4 +46,6 @@ footer  {
 
 p {
     max-width: 500px;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
