@@ -1,6 +1,42 @@
-/* Angir ein bakgrunnsfarge */
 body {
-    background-color:  #bdc1c6;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #1d2a35;
+    font-family: "Roberto";
+}
+
+#main_grid {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: " m "
+                         " h "
+                         " c "
+                         " f ";
+}
+
+header { 
+    grid-area: h; 
+    text-align: center; 
+}
+
+.menu { 
+    grid-area: m; 
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+
+main { 
+    grid-area: c;
+    margin-left: 25vw;
+ }
+
+footer  { 
+    grid-area: f; 
+    text-align: center; 
 }
 /* Angir max storleik på tekst*/
 p {
@@ -25,14 +61,13 @@ div#hovud {
     border: 4px solid grey;
     background-color: white;
     margin: 50px
-    
+
 }
 
-div {
+.pixel_div {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: black;
 }
 /* Anngir fargene til pixel-figuren i classene svart og grønn*/
 .svart {
