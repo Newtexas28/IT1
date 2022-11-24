@@ -3,10 +3,12 @@ body {
     padding: 0;
     color: white;
     background-color: #1d2a35;
+    background-image: url(https://www.nasjonalparkriket.no/sites/cb_npr/files/styles/article_slide_xlarge/public/IMG_9380.web-2.jpg?h=2aa4407b&itok=zmfAOxDy);
+    background-size: cover;
     font-family: "Roberto";
 }
 
-#main {
+#main_grid {
     display: grid;
     width: auto;
     height: auto;
@@ -16,7 +18,6 @@ body {
                          " c "
                          " f ";
 }
-
 
 header { 
     grid-area: h; 
@@ -44,6 +45,9 @@ img {
     width: 50vw;
 }
 
-p {
-    max-width: 500px;
+#information {
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+    max-width: 400px;
 }
