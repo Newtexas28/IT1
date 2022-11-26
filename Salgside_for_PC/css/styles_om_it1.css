@@ -6,7 +6,7 @@ body {
     font-family: "Roberto";
 }
 
-#main {
+#main_grid {
     display: grid;
     width: auto;
     height: auto;
@@ -23,7 +23,7 @@ header {
     text-align: center; 
 }
 
-menu { 
+.menu { 
     grid-area: m; 
     text-align: center; 
     margin: 0;

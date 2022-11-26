@@ -22,7 +22,7 @@ header {
     text-align: center; 
 }
 
-menu    { 
+.menu    { 
     grid-area: m; 
     text-align: center;
     margin: 0;
