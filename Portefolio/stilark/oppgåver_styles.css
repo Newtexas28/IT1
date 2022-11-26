@@ -3,14 +3,16 @@ body {
     padding: 0;
     color: white;
     background-color: #1d2a35;
+    background-image: url(/Portefolio/bilder/AdobeStock_254529936_Railroad-to-Denali-National-Park-Alaska_750x500.jpg);
+    background-size: cover;
     font-family: "Roberto";
 }
 
-#main {
+#main_grid {
     display: grid;
     width: auto;
     height: auto;
-    grid-template-rows: 15vh 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: " m "
                          " h "
                          " c "
