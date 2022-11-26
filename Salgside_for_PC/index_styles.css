@@ -18,7 +18,7 @@ body {
 }
 
 
-.headder { 
+header { 
     grid-area: h; 
     text-align: center; 
 }
@@ -28,12 +28,12 @@ body {
     text-align: center; 
 }
 
-.content { 
+main { 
     grid-area: c;
     margin-left: 25vw;
  }
 
-.fotter  { 
+footer { 
     grid-area: f; 
     text-align: center; 
 }
