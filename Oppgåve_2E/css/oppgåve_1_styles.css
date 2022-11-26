@@ -21,7 +21,7 @@ header {
     text-align: center; 
 }
 
-menu    { 
+.menu    { 
     grid-area: m; 
     text-align: center; 
     margin: 0;
@@ -30,7 +30,7 @@ menu    {
 
 main { 
     grid-area: c;
-    margin-left: 25vw;
+    margin-left: 42vw;
  }
 
 footer  { 
