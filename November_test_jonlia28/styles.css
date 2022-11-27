@@ -1,38 +1,35 @@
 body {
-    background-color: #052745;
-    color: white ;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    color: white;
+    background-color: #1d2a35;
 }
 
-#hedder {
+#main_grid {
     display: grid;
     width: auto;
     height: auto;
     gap: 5px;
-    background-color: aliceblue;
-    
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-template-areas: " t "
-                         " i "
+    grid-template-rows:  1fr;
+    grid-template-areas: " l "
+                         " h "
+                         " m "
                          " f ";
 }
 
-#hedder > div {
-    background-color: #aaa;
-    border: 1px solid black;
+header { grid-area : h; 
+        text-align: center; 
 }
 
-.topp        { grid-area : t; 
-               text-align: center; }
+main {  grid-area : m; 
+        text-align: center;
+        height: 400px;
+        margin: 0px 5%; 
+}
 
-.informasjon { grid-area : i; 
-               text-align: center;
-               height: 400px;
-               margin: 0px 5%; }
-
-.fotter      { grid-area: f;
-               text-align: center; }
+.menu { grid-area: l;
+       text-align: center; 
+}
 
 a:link {
     color: white;
@@ -90,13 +87,8 @@ a:hover {
     color: white;
     
 }
-a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
 
 p {
-
     text-align: center;
+    max-width: 500px;
 }
