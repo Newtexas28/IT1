@@ -1,0 +1,73 @@
+/*.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr minmax(10px, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "main . image";
+
+}
+*/
+/*
+.overskrift{
+    grid-area: header;
+    background-color: rgb(56, 56, 127);
+    
+}
+
+.bilete{
+    grid-area: image;
+    max-width: 50px;
+}
+
+.tekst {
+    grid-area: main;
+    color: aqua;
+}
+*/
+
+div {
+    border: 1px solid black;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: red;
+}
+
+h1, h2, h3,h4 { 
+    background-color: cadetblue;
+    color: white;
+    padding: 0px 5px;
+    margin: 0px
+}
+
+#one {
+    background-color: gray;
+}
+
+#two {
+    width: 50%;
+    background-color: azure;
+    margin: 5px;
+}
+
+#three {
+    width: 50%;
+    min-height: 100px;
+    background-color:darkgreen;
+}
+
+.viktig {
+    height: 10vh;
+    width: 75vw;
+}
+
+.mindre_viktig {
+    width: 52vw;
+}
+
+
+/*
+body{
+    background-color: rgb(124, 120, 115);
+}
+*/
