@@ -5,31 +5,38 @@ body {
     margin: 0;
 }
 
-#hovud {
+#main_grid {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-rows: 1fr 8fr 1fr;
-    grid-template-areas: " h "
+    grid-template-rows: 1fr;
+    grid-template-areas: " l "
+                         " h "
                          " m "
                          " f ";
 }
 
-#hedder > div {
-    background-color: #aaa;
-    border: 1px solid black;
+header {    
+    grid-area : h;
+    text-align: center; 
 }
 
-.headder { grid-area : h;
-    text-align: center; }
-.meny    { grid-area : m;
- }
-.fotter  { grid-area : f; 
-    text-align: center; }
+menu {
+    grid-area: l;
+}
+
+main { 
+    grid-area : m;
+}
+
+footer { 
+    grid-area : f; 
+    text-align: center; 
+}
 
 #oppgåve-1 {
-    width: 1000px;
-    height: 1500px;
+    width: 98vw;
+    height: 160vh;
     display: grid;
     gap: 5px;
     

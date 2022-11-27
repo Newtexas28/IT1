@@ -1,13 +1,45 @@
 body {
-    background-color: #031a2e;
-    color: white;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    color: white;
+    background-color: #1d2a35;
 }
 
-#hoved {
-    width: 1000px;
-    height: 825px;
+#main_grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows:  1fr;
+    grid-template-areas: " l "
+                         " h "
+                         " m "
+                         " f ";
+}
+
+header { 
+    grid-area : h; 
+    text-align: center; 
+}
+
+main {  
+    grid-area : m; 
+     
+}
+
+.menu {
+    grid-area: l;
+    text-align: center; 
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
+}
+
+
+#hovud {
+    width: 98vw;
+    height: 180vh;
     display: grid;
     gap: 5px;
     
@@ -18,7 +50,7 @@ body {
 
 }
 
-#hoved > div {
+#hovud > div {
     width: 300px;
     height: 500px;
     background-color: rgb(189, 189, 26);
