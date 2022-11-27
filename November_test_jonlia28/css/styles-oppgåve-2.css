@@ -1,0 +1,103 @@
+body {
+    background-color: #052745;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+#hovud {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: " h "
+                         " m "
+                         " f ";
+}
+
+#hedder > div {
+    background-color: #aaa;
+    border: 1px solid black;
+}
+
+.headder { grid-area : h;
+    text-align: center; }
+.meny    { grid-area : m;
+ }
+.fotter  { grid-area : f; 
+    text-align: center; }
+
+#oppgåve-1 {
+    width: 1000px;
+    height: 1500px;
+    display: grid;
+    gap: 5px;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+
+}
+
+#oppgåve-1 > div {
+    width: 300px;
+    height: 500px;
+    background-color: darkgrey;
+    border: 1px solid black;
+} 
+
+p {
+    padding: 5px;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+
+img {
+    padding-left: 25%;
+}
+
+.vertical-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    background-color: grey;
+    height: 15%;
+    position: fixed;
+    overflow: auto;
+    transition: all 0.2s ease;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.vertical-bar:hover {
+    width: 10%;
+    height: 55%;
+}
+
+.vertical-bar:hover .task-links a {
+    display: block;
+}
+
+.task-links a {
+    display: none;
+    color: #000;
+    padding: 8px 16px; 
+    text-decoration: none;
+}
+
+.task-links a.active {
+    background-color: #333;
+    color: white;
+}
+.task-links a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
