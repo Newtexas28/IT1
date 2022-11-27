@@ -77,11 +77,10 @@ a:hover {
     padding: 8px 16px; 
     text-decoration: none;
 }
-
-.task-links a.active {
+.active {
     background-color: #333;
-    color: white;
 }
+
 .task-links a:hover:not(.active) {
     background-color: #555;
     color: white;

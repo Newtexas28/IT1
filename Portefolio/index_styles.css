@@ -33,7 +33,8 @@ menu    {
 
 main { 
     grid-area: c;
-    margin-left: 25vw;
+    text-align: center;
+    margin-left: 34vw; 
  }
 
 footer  { 
