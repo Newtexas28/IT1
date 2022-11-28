@@ -34,7 +34,9 @@ menu    {
 main { 
     grid-area: c;
     text-align: center;
-    margin-left: 34vw; 
+    margin-left: 50%;
+    transform: translate(-50%);
+
  }
 
 footer  { 

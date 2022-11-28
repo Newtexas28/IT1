@@ -52,7 +52,7 @@ footer  {
     padding: 0;
     width: 15px;
     background-color: grey;
-    height: 30vh;
+    height: 50%;
     position: fixed;
     overflow: auto;
     transition: all 0.2s ease;
