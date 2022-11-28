@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #1d2a35;
+    font-family: "Roberto";
+}
+
+#main_grid {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: " m "
+                         " h "
+                         " c "
+                         " f ";
+}
+
+header { 
+    grid-area: h; 
+    text-align: center; 
+}
+
+.menu    { 
+    grid-area: m; 
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+
+main { 
+    grid-area: c;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+
+ }
+
+footer  { 
+    grid-area: f; 
+    text-align: center; 
+}
