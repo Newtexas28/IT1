@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JHL Portefolio - Oppgåve 3B - variablar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div id="main_grid">
+
+            <header>
+                <h1>Øvingsoppgåver - Variablar</h1>
+            </header>
+
+            <div class="menu">
+                <menu class="horisontal-bar">
+                    <li class="navigation-links"><a href="/Portefolio/index.html">Heime</a></li>
+                    <li class="navigation-links"><a class="active" href="/Portefolio/html/oppgåver.html">Oppgåver</a></li>
+                    <li class="navigation-links" id="MDN_docs"><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></li>
+                    <li class="navigation-links" id="Git_Hub"><a href="https://github.com" target="_blank">Git Hub</a></li>
+                    <li class="navigation-links" id="Aunivers_lokus_no"><a href="https://aunivers.lokus.no/fagpakker/realfag/informasjonsteknologi-1-2/it-1" target="_blank">Læreboka</a></li>
+                    <li class="navigation-links" id="about"><a href="/Portefolio/html/om_meg.html">Om meg</a></li>
+                </menu> <br>
+        
+                <menu class="vertical-bar">
+                    <li class="task-links"><a href="">Fagdag_Salgside</a></li>
+                    <li class="task-links"><a href="">November test</a></li>
+                    <li class="task-links"><a href="">Salgside</a></li>
+                </menu>
+            </div> <br>
+
+            <main>
+                <div id="information">
+                    <h3>1</h3>
+                    <p> 
+                        <strong>vaRiaBEl</strong>, er lovleg pga at ein kan bruke store og nå bokstaver i same variabel namn. 
+                        <strong>spiller.2</strong> er ikkje lovleg sidan ein kan ikkje bruke punktum i variabel namn.
+                        <strong>3.plass</strong> er ikkje lov å bruke tall fyst i eit variabel namn eller bruke punktum.
+                        <strong>antall_deltagere</strong> er lovleg ein kan bruke understrekker i variabel namn.
+                        <strong>antallDeltagere</strong> er lovleg å bruke store bokstaver i variabel namn,
+                        <strong>antall-deltagere</strong> er ikkje lovleg å bruke bindestrek i variabel namn.
+                        <strong>årstall</strong> er ikkje lovleg pga av at ein ikkje kan bruke norske sær bokstaver.     
+                    </p> <br>
+
+                    <h3>2</h3>
+                    <p>
+                        Nokre betre namn kan være <strong>variabel, spiller_to, tredje_plass, antall_deltagere, aarstall</strong>
+                    </p>
+                    <h3>3</h3>
+                    <p id="favoritt_tall"></p>
+
+                    <h3>4</h3>
+                    <p id="favoritt_tall_to"></p>
+                </div>
+            </main>
+
+            <footer>
+                <div>
+                    <img id="go_back_arrow" src="/Portefolio/bilder/Go_back_arrow.png" alt="Tilbake knapp  ">
+                    <button id="go_back_button" onclick="history.back()">Tilbake</button>
+                </div>
+            </footer>
+
+        </div>
+        
+        <script src="/Oppgåve_3B/js/variabler.js" async defer></script>
+    </body>
+</html>
