@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html lang="no">
     <head>
         <meta charset="utf-8">
@@ -12,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/Oppgåve_3B/stilark/styles.css">
         <link rel="stylesheet" href="/Portefolio/stilark/common_menu_design.css">
+        <link rel="stylesheet" href="/Portefolio/stilark/go_back_button_design.css">
         <link rel="icon" href="">
     </head>
     <body>
@@ -38,7 +36,12 @@
 
             <main></main>
 
-            <footer></footer>
+            <footer>
+                <div id="go_back_button" onclick="history.back()">
+                    <img id="go_back_arrow" src="/Portefolio/bilder/Arrow_left_icon.png" alt="Tilbake knapp">
+                    <p>Tilbake</p>
+                </div>
+            </footer>
         </div>
     
         <script src="/Oppgåve_3B/js/main.js" async defer></script>

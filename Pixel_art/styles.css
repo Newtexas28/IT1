@@ -60,7 +60,8 @@ div#hovud {
     height: 220px;
     border: 4px solid grey;
     background-color: white;
-    margin: 50px
+    margin: 50px;
+    position: relative;
 
 }
 
