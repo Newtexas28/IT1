@@ -10,7 +10,7 @@ body {
     display: grid;
     width: auto;
     height: auto;
-    grid-template-rows: 15vh 1fr 4fr 1fr;
+    grid-template-rows:  1fr;
     grid-template-areas: " m "
                          " h "
                          " c "
@@ -38,6 +38,6 @@ footer {
     text-align: center; 
 }
 
-img {
+#gaming_pc {
     width: 50vw;
 }

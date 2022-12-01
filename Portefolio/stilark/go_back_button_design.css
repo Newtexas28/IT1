@@ -1,8 +1,10 @@
 #go_back_button {
     display: flex;
     color: white;
-    background-color: red;
+    background-color: #283d4f;
+    border: solid 2px white;
     padding: 20px;
+    margin-left: 10px;
     justify-content: center;
     align-items: center;
     width: min-content;
