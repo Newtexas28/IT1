@@ -35,8 +35,7 @@ main {
  }
 
 footer  { 
-    grid-area: f; 
-    text-align: center; 
+    grid-area: f;  
 }
 /* Angir max storleik på tekst*/
 p {
@@ -44,10 +43,8 @@ p {
 }
 /* Lager ein stil for lenka */
 a {
-    background-color: black;
     color: greenyellow;
 }
-
 
 .img {
     margin-top: 300px;

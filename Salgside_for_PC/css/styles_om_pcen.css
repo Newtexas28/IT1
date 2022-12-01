@@ -14,6 +14,7 @@ body {
     grid-template-areas: " m "
                          " h "
                          " c "
+                         " t "
                          " f ";
 }
 
@@ -35,16 +36,20 @@ main {
     margin-left: 15px;
 }
 
-footer  { 
-    grid-area: f; 
-    text-align: center; 
-    padding-left: 35vw;
-    padding-top: 5vh;
+footer { 
+    grid-area: f;
 }
 
 .gaming_pc {
     width: 45vw;
     border-radius: 15px 15px;
+}
+
+#tabel {
+    grid-area: t; 
+    text-align: center; 
+    padding-left: 35vw;
+    padding-top: 5vh;
 }
 
 #About-PC {
