@@ -11,4 +11,4 @@ document.getElementById('favoritt_tall_to').innerHTML = "Mitt favoritt tall er:"
 
 let tall = 142;
 
-console.log(tall);  
+console.log(tal);    
