@@ -39,7 +39,7 @@ footer {
 
 #hovud {
     width: 98vw;
-    height: 180vh;
+    height: 270vh;
     display: grid;
     gap: 5px;
     
@@ -51,6 +51,7 @@ footer {
 }
 
 #hovud > div {
+ 
     width: 300px;
     height: 500px;
     background-color: rgb(189, 189, 26);
