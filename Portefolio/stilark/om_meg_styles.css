@@ -3,6 +3,8 @@ body {
     padding: 0;
     color: white;
     background-color: #1d2a35;
+    background-image: url(/Portefolio/bilder/pexels-suket-dedhia-671658.jpg);
+    background-size: cover;
     font-family: "Roberto";
 }
 
@@ -19,7 +21,14 @@ body {
 
 header { 
     grid-area: h; 
-    text-align: center; 
+    text-align: center;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+    max-width: 150px;
+    margin-left: 50vw;
+    margin-bottom: 30px;
+    transform: translate(-50%); 
 }
 
 .menu { 
@@ -32,20 +41,24 @@ header {
 main { 
     grid-area: c;
     text-align: center;
-    
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+    max-width: 400px;
+    margin-left: 50vw;
+    transform: translate(-50%);
  }
 
 footer { 
     grid-area: f; 
-    text-align: center;
 }
 
 .information-about-me {
     color: white;
 }
 
-p {
-    max-width: 500px;
+.about_me {
+    width: 500px;
     margin-left: 50%;
     transform: translate(-50%);
 }
