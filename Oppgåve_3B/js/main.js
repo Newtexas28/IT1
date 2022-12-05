@@ -12,9 +12,10 @@ console.warn("Dette er warn");
 console.info("Dette er info")
 
 const sitat = "Hello world, And dfhsdkfhj dfh";
+let tall = 2.71;
 
 document.getElementById("console").innerHTML = "Summen blir: " + sum;
-
 document.getElementById('sitat').innerHTML = sitat;
 document.getElementById('w').innerHTML = "Her blir w vist: " + sitat.indexOf('w');
 document.getElementById('Hello_World').innerHTML = sitat.substring(0, 11);
+document.getElementById("Oppgåve_8").innerHTML = sitat.length;
