@@ -32,10 +32,33 @@ header {
 
 main { 
     grid-area: c;
-    margin-left: 25vw;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
  }
 
 footer  { 
     grid-area: f; 
     text-align: center; 
+}
+
+@media screen and (max-width: 520px) {
+
+    header {
+        margin-top: 5vw;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+
+    main {
+        margin: auto;
+        width: 50vw;
+        padding: 10px;
+    }
+
+    footer {
+        margin-top: 3vh;
+        margin-left: 5vw;
+    }
 }
