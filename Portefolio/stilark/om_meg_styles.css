@@ -43,20 +43,46 @@ main {
     margin: auto;
     margin-top: 5vh;
     width: 50vw;
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 100%;
-    width: 45vw;
+    padding: 1px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
  }
 
 footer { 
     grid-area: f; 
 }
 
-.information-about-me {
+.about_me {
     color: white;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+    padding: 30px; 
 }
 
-.about_me {
-    max-width: 600px;
+@media screen and (max-width: 520px) {
+    body {
+        background-image: url(/Portefolio/bilder/bilete_mobil/pexels-trace-hudson-2516418.jpg);
+        background-size: auto;
+    }
+
+    header {
+        margin-top: 5vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 100%;
+    }
+
+    main {
+        width: 100vw;
+        padding: 3vw;
+    }
+    
+    .about_me {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 20%;
+    }
 }
