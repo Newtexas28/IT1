@@ -31,15 +31,21 @@ header {
 
 main { 
     grid-area: c;
-    margin-left: 25vw;
+    text-align: center;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
  }
 
 footer  { 
     grid-area: f;  
 }
 /* Angir max storleik på tekst*/
-p {
-    max-width: 500px;
+.information {
+    text-align: center;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
 }
 /* Lager ein stil for lenka */
 a {
@@ -247,4 +253,18 @@ div#hovud {
 
 .c20 {
     left: 200px; 
+}
+
+@media screen and (max-width: 520px) {
+
+    header {
+        margin-top: 5vw;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    main {
+        width: 100vw;
+        padding: 10px;
+    }
 }
