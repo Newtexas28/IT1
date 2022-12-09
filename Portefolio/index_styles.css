@@ -24,7 +24,7 @@ header {
     text-align: center; 
 }
 
-menu    { 
+menu { 
     grid-area: m; 
     text-align: center; 
     margin: 0;
@@ -39,7 +39,7 @@ main {
     padding: 10px;
  }
 
-footer  { 
+footer { 
     grid-area: f; 
     text-align: center; 
 }
@@ -49,4 +49,33 @@ footer  {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 100%;
     max-width: 600px;
+}
+
+@media screen and (max-width: 520px) {
+    body {
+        background-image: url(/Portefolio/bilder/bilete_mobil/pexels-simone-defendi-12762122.jpg);
+        background-size: auto;
+    }
+
+    header {
+        margin-top: 5vw;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 100%;
+    }
+
+    main {
+        width: 100vw;
+        padding: 10px;
+    }
+    
+    #information {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 100%;
+    }
 }
