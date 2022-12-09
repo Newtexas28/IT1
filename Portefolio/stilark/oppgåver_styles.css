@@ -22,7 +22,8 @@ body {
 header { 
     grid-area: h; 
     text-align: center;
-    margin-left: 40vw;
+    margin: auto;
+    width: 50vw;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
@@ -38,12 +39,14 @@ menu    {
 
 main { 
     grid-area: c;
-    margin-left: 25vw;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
  }
 
 footer  { 
     grid-area: f;
-    margin-top: 40vh;  
+    margin-top: 35vh;  
 }
 
 .vertical-bar {
@@ -52,7 +55,7 @@ footer  {
     padding: 0;
     width: 15px;
     background-color: grey;
-    height: 70vh;
+    height: 60vh;
     position: fixed;
     overflow: auto;
     transition: all 0.2s ease;

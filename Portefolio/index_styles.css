@@ -34,9 +34,9 @@ menu    {
 main { 
     grid-area: c;
     text-align: center;
-    margin-left: 50%;
-    transform: translate(-50%);
-
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
  }
 
 footer  { 
@@ -45,8 +45,8 @@ footer  {
 }
 
 #information {
-    padding: 100px;
+    padding: 40px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 100%;
-    max-width: 400px;
+    max-width: 600px;
 }

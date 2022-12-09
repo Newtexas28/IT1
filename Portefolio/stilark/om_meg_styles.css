@@ -22,13 +22,12 @@ body {
 header { 
     grid-area: h; 
     text-align: center;
-    padding: 100px;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 100%;
     max-width: 150px;
-    margin-left: 50vw;
-    margin-bottom: 30px;
-    transform: translate(-50%); 
 }
 
 .menu { 
@@ -41,12 +40,13 @@ header {
 main { 
     grid-area: c;
     text-align: center;
-    padding: 100px;
+    margin: auto;
+    margin-top: 5vh;
+    width: 50vw;
+    padding: 50px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 100%;
-    max-width: 400px;
-    margin-left: 50vw;
-    transform: translate(-50%);
+    width: 45vw;
  }
 
 footer { 
@@ -58,7 +58,5 @@ footer {
 }
 
 .about_me {
-    width: 500px;
-    margin-left: 50%;
-    transform: translate(-50%);
+    max-width: 600px;
 }
