@@ -87,7 +87,30 @@ a:hover {
     
 }
 
-p {
-    text-align: center;
-    max-width: 500px;
+#information {
+    margin: auto;
+    width: 50vw;
+    padding: 50px;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 520px) {
+    header {
+        margin-top: 5vw;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    main {
+        width: 100vw;
+        padding: 10px;
+    }
+    
+    #information {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        padding: 10px;
+        width: 90vw;
+    }
 }
