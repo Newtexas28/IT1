@@ -98,3 +98,37 @@ footer  {
 #go_back_arrow {
     max-width: 21px;
 }
+
+@media screen and (max-width: 520px) {
+    body {
+        background-image: url(/Portefolio/bilder/bilete_mobil/pexels-roheet-bhattarai-12783894.jpg);
+        background-size: auto;
+    }
+
+    header {
+        margin-top: 5vw;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 100%;
+    }
+
+    main {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    footer {
+        margin-top: 3vh;
+        margin-right: 9vw;
+    }
+    
+    #information {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 100%;
+    }
+}
