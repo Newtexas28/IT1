@@ -87,9 +87,9 @@ footer  {
 }
 
 #information {
-    margin-top: 3vh;
-    margin-left: 16.5vw;
-    padding: 20px;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 25%;
     max-width: 200px;
@@ -121,7 +121,7 @@ footer  {
 
     footer {
         margin-top: 3vh;
-        margin-right: 9vw;
+        margin-left: 5vw;
     }
     
     #information {
@@ -130,5 +130,19 @@ footer  {
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.7);
         border-radius: 100%;
+        padding: 20px;
     }
+
+    .vertical-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    background-color: grey;
+    height: 45vh;
+    position: fixed;
+    overflow: auto;
+    transition: all 0.2s ease;
+    border-radius: 0px 25px 25px 0px;
+}
 }
