@@ -36,7 +36,7 @@ main {
 
 footer  { 
     grid-area: f;
-    margin-top: 60vh; 
+    margin-top: 20vh;
 }
 
 .vertical-bar {
@@ -45,7 +45,7 @@ footer  {
     padding: 0;
     width: 15px;
     background-color: grey;
-    height: 50%;
+    height: 20vh;
     position: fixed;
     overflow: auto;
     transition: all 0.2s ease;
@@ -80,4 +80,31 @@ footer  {
     max-width: 500px;
     margin-left: 50%;
     transform: translate(-50%);
+}
+
+@media screen and (max-width: 520px) {
+
+    header {
+        margin-top: 5vw;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 100%;
+    }
+
+    main {
+        width: 100vw;
+        padding: 10px;
+    }
+    
+    #information {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 100%;
+        padding: 10px;
+        width: 90vw;
+    }
 }
