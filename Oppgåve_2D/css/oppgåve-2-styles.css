@@ -90,3 +90,57 @@ footer  {
     max-width: 300px;
     border-radius: 25%;
 }
+#oppg-a {
+    background-color: #75c3cd;
+    padding: 10px;
+    width: 300px;
+    border-radius: 15%;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
+}
+
+.vm_winners {
+    background-color: #75c3cd;
+    margin: 3px;
+    padding: 5px;
+    max-width: 300px;
+    border-radius: 25%;
+}
+
+h3 {
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
+}
+
+@media screen and (max-width: 520px){
+    
+    #oppg-a {
+        background-color: #75c3cd;
+        padding: 10px;
+        width: 350px;
+        border-radius: 15%;
+        margin: 0;
+    }
+
+    #oppg-b {
+        margin: auto;
+        width: 50vw;
+        padding: 10px;
+        width: 350px;
+    }
+    
+    .vm_winners {
+        background-color: #75c3cd;
+        margin: 3px;
+        padding: 5px;
+        max-width: 300px;
+    }
+    
+    h3 {
+        margin: auto;
+        width: 50vw;
+        padding: 10px;
+    }
+}
