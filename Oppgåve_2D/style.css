@@ -31,7 +31,9 @@ menu    {
 
 main { 
     grid-area: c;
-    margin-left: 25vw;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
  }
 
 footer  { 

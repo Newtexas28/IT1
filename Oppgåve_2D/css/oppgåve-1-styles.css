@@ -32,7 +32,9 @@ header {
 
 main { 
   grid-area: c;
-  padding: 20px;
+  margin: auto;
+  width: 50vw;
+  padding: 10px;
 }
 
 footer  { 
@@ -93,12 +95,46 @@ tbody > tr {
   background-color: #f6f7fa;
 } 
 
+h1 {
+  font-family: Arial, sans-serif; 
+}
+
+#cantine {
+  margin: 20px;         
+  padding: 20px;	             
+  background-color: #1d2a35;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
 #hoved {         
   margin: 20px;         
   padding: 20px;	             
-  background-color: white; 	 
-  border: 1px solid #cccccc;
+  background-color: #1d2a35;
+  margin-left: 50%;
+  transform: translate(-50%); 	 
 }
-h1 {
-  font-family: Arial, sans-serif; 
+
+@media screen and (max-width: 1270px) {
+
+  header {
+      margin-top: 5vw;
+      margin-right: 10vw;
+      margin-left: 10vw;
+  }
+
+  main {
+      width: 100vw;
+      padding: 10px;
+  }
+  
+  #information {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      padding: 10px;
+      width: 90vw;
+  }
+
+  
 }
