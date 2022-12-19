@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #1d2a35;
+    background-image: url(/Let_the_War_begin/images/Miniature_wargame.jpg);
+    background-size: cover;
+    font-family: "Roberto";
+}
+
+#main_grid {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: " m "
+                         " h "
+                         " c "
+                         " f ";
+}
+
+header { 
+    grid-area: h; 
+    text-align: center; 
+}
+
+menu { 
+    grid-area: m; 
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+
+main { 
+    grid-area: c;
+    text-align: center;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
+}
+
+footer { 
+    grid-area: f; 
+    text-align: center; 
+    margin: auto;
+    padding: 10px;
+}
+
+.vertical-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    background-color: grey;
+    height: 60vh;
+    position: fixed;
+    overflow: auto;
+    transition: all 0.2s ease;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.vertical-bar:hover {
+    width: 200px;
+}
+
+.vertical-bar:hover .task-links a {
+    display: block;
+}
+
+.task-links a {
+    display: none;
+    color: #000;
+    padding: 8px 16px; 
+    text-decoration: none;
+}
+
+.task-links a.active {
+    background-color: #333;
+    color: white;
+}
+.task-links a:hover:not(.active) {
+    background-color: #555;
+    color: white; 
+}
+
+#go_back_arrow {
+    max-width: 21px;
+}
