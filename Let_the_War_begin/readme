@@ -1,0 +1,40 @@
+/*
+ * Let the WAR begin! Det avanserte krigsspillet.
+ * I denne oppgaven skal du lage et krigsspill hvor en hær kjemper mot en annen hær.
+ * I programmet ditt setter du opp hvor mange krigere det er på hver side. 
+ * Antall krigere i hver hær skal være tilfeldig, men noenlunde likt så utfallet ikke er innlysende. 
+ * Du bestemmer selv hvor mange dette antallet bør være. 
+ * Når spillet starter, vil en fra hver hær kjempe til bare den ene står igjen. 
+ * Dette repeteres til en av hærene ikke har flere krigere igjen. 
+ * Du må nok bruke en løkke, og sjekke om hærene har gått tom for krigere. 
+ * Inne i løkken vil utfallet av krigernes kamper bli avgjort, og antallet krigere i den ene hæren vil telle ned med en.
+ * Den enkleste formen for å avgjøre en kamp mellom krigere er sannsynligvis å bruke Math.random() for å avgjøre om den ene eller andre vant. 
+ * Men, dette kan gjøre langt mer sofistikert dersom man vil gjøre spillet ekstra underholdende. 
+ * For hver kriger kan man for eksempel beregne krigernes styrke, evne til å motstå angrep og erfaring. 
+ * Så kan man si begge har like mye livskraft og la dem få hver sin gang å angripe til en av dem ikke har livskraft igjen.
+ * F.eks. Kriger A angriper kriger B:Kriger B får skade = (Kriger A styrke + Kriger A erfaring) – (Kriger B evne til å motstå angrep + Kriger B erfaring). 
+ * Bruk console.log() til å vise utfallet av krigen underveis og resultatet.
+ * Oppgaven legges i porteføljen.
+ * 
+ * Oppgåve 1: 
+ * Lag en nettside som reklamerer for spillet ditt! 
+ * Bruk bilder eller illustrasjoner og gjør det så likt andre reklamer for slike spill som du klarer. 
+ * 
+ * Oppgave 2: 
+ * Lag et flytdiagram som beskriver hvordan spillet ditt virker. 
+ * Her kan du lage flere enn ett diagram om du trenger det. 
+ * 
+ * Oppgave 3: 
+ * Lag selve spillet.Du kan vise så mye du selv vil i HTML. 
+ * Minimumskrav er at du viser hva som skjer i spillet i konsollet. 
+ * 
+ * Oppgave 4: 
+ * 
+ * Lag en Powerpoint presentasjon hvor du presenterer og forklarer hvordan du har laget spillet. 
+ * Gå her gjennom koden og forklar alle løkker (for/while), valg(if-else) og beregninger du har gjort i spillet.
+ * Forklaringene gjøres med video eller bare lyd i presentasjonen. 
+ * Her kan du bruke det programmet du liker best. 
+ * Jeg vet det er mange som har erfaring med Screencast-O-Matic, 
+ * så har du ikke gjort dette før kan du helt sikkert få hjelp av en klassekamerat eller spørre meg. 
+ * Se https://screencast-o-matic.com/integrations/powerpoint/
+ */
