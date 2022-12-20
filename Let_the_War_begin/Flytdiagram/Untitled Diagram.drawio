@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-12-20T16:13:10.117Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 OPR/93.0.0.0" etag="T1-RZsKVt6Fwyh3FE_0l" version="20.7.4" type="github">
-  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="3012" dy="2929" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2022-12-20T16:18:41.134Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 OPR/93.0.0.0" etag="8jsY8p8BeRxLf4Z44I9c" version="20.7.4" type="github" pages="2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="War game overlaying structure">
+    <mxGraphModel dx="5020" dy="4099" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -156,12 +156,20 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="JlELQ2f5WmK6WIo9ec_y-26" value="Red Team får angripe&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;så startar løkka på nytt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="JlELQ2f5WmK6WIo9ec_y-26" value="Blue Team får angripe&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;så startar løkka på nytt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="200" y="-80" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="JlELQ2f5WmK6WIo9ec_y-30" value="Spellet er ferdig reseter bana og anrepstrattegiene til spillaren" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1010" y="-660" width="120" height="60" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="jjiYEVpLofO58fgSqzfj" name="Attack and damge calculation">
+    <mxGraphModel dx="2510" dy="1467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
