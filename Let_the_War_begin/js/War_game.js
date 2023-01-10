@@ -7,8 +7,8 @@
 
 // Declaring global variables
 const army_size = 10;
-let Team_Blue_size = Math.floor(Math.random() * army_size) + 41;
-let Team_Red_size = Math.floor(Math.random() * army_size) + 41;
+let Team_Blue_size =Math.floor(Math.random() * army_size);
+let Team_Red_size = Math.floor(Math.random() * army_size);
 
 let Team_Blue = [];
 let Team_Red = [];
@@ -47,6 +47,7 @@ class Warrior {
             // Take the opponents weapon if its better than your own
             if (warrior.weapon > this._weapon) {
                 this._weapon = warrior.weapon; 
+                console.log(this.weapon);
             };
         };
         
@@ -55,7 +56,7 @@ class Warrior {
     update_health (healthChange) {
         // Health degree is increased or decreased for alive warriors
         console.log(healthChange);
-        if (this._health === 0) {
+        if (this._health == 0) {
             return;
         };
 
@@ -68,6 +69,7 @@ class Warrior {
         }
         else {
             this._health = new_health;
+            console.log(this.health);
         };
         
     };
@@ -75,9 +77,10 @@ class Warrior {
     add_experience() {
         // Increase experience for alive warriors
         if (this._health > 0) {
-            this._experience+= 1;
-        }
-        
+            if (this._experience > 10) {
+                this._experience+= 1;
+            };
+        };
     }; 
 };
 
@@ -142,22 +145,6 @@ function draw_sequence () {
 
 };
 
-/*
- * Creating a function to test how many members of one of the armys are still live.
- */
-
-function get_num_of_alive_team_members (Team) {
-    let count = 0;
-
-    for (i = 0; i < Team.length; i++) {
-        if (Team[i].health > 0) {
-        count++;        
-        };
-    };
-    console.log(count);
-    return count;
-};
-
 function duel (Red_warrior, Blue_warrior) {
     const probW = [ [0.5, 0.2, 0.1], [0.8, 0.5, 0.2], [0.9, 0.8, 0.5]];
     let prob_Red_W = probW[Red_warrior.weapon][Blue_warrior.weapon];
@@ -168,7 +155,7 @@ function duel (Red_warrior, Blue_warrior) {
     let prob_Red = prob_Red_W * prob_Red_E;
     prob_Red = prob_Red / (prob_Blue + prob_Red);
     
-    if (Red_warrior.health === 0 || Blue_warrior.health === 0) {
+    if (Red_warrior.health == 0 || Blue_warrior.health == 0) {
         if(Red_warrior.health > 0) {
             Red_warrior.update_health(1);
         };
@@ -183,9 +170,6 @@ function duel (Red_warrior, Blue_warrior) {
     if (Math.random() < prob_Red) {
         // Red won.
         console.log("Red won");
-        Red_warrior.update_health(1);
-        Blue_warrior.update_health(-Red_warrior.weapon * 4);
-        Red_warrior.update_weapon(Blue_warrior);
     }
     else {
         // Blue won.
@@ -196,13 +180,19 @@ function duel (Red_warrior, Blue_warrior) {
     };
 };
 
-function average_health(Team) {
-    let sum = 0;
+/*
+ * Creating a function to test how many members of one of the armys are still live.
+ */
+
+function get_num_of_alive_team_members (Team) {
+    let count = 0;
+
     for (i = 0; i < Team.length; i++) {
-        sum += Team.health;
+        if (Team[i].health > 0) {
+        count++;        
+        };
     };
-    console.log(sum);
-    return sum/Team.length;
+    return count;
 };
 
 function alive_members (Team) {
@@ -216,16 +206,35 @@ function alive_members (Team) {
     return sum;
 };
 
+function average_health(Team) {
+    let sum = 0;
+    for (i = 0; i < Team.length; i++) {
+        sum += Team[i].health;
+        console.log(Team[i].health);
+    };
+    console.log(sum);
+    
+    return sum/Team.length;
+};
+
+function average_experience (Team) {
+    let sum = 0;
+    for (i = 0; i < Team.length; i++) {
+        sum += Team[i].experience;
+    };
+    return sum/Team.length;
+};
+
 function report_status (iteration) {
     let alive_Red = alive_members(Team_Red);
     let average_health_Red = average_health(Team_Red);
-
     let alive_Blue = alive_members(Team_Blue);
     let average_health_Blue = average_health(Team_Blue);
+    let average_experience_Blue = average_experience(Team_Blue);
     console.log(`Iteration ${iteration}`)
     console.log(`Blue Team Warriors alive: ${alive_Blue} Average health on Blue Team: ${average_health_Blue}`);
     console.log(`Red Team Warriors alive: ${alive_Red} Average health on Red Team: ${average_health_Red}`);
-
+    console.log(`Blue TeamAverage_experience ${average_experience_Blue}`)
 };
 
 function war () {
