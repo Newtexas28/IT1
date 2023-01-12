@@ -5,10 +5,10 @@
  * Author: Jon Håkon Lia <jonlia28@innlandetfylke.no>
  */
 
-// Declaring global variables
+// Declaring global variables.
 const army_size = 10;
-let Team_Blue_size =Math.floor(Math.random() * army_size);
-let Team_Red_size = Math.floor(Math.random() * army_size);
+let Team_Blue_size = Math.floor(Math.random() * army_size) + 1;
+let Team_Red_size = Math.floor(Math.random() * army_size) + 1;
 
 let Team_Blue = [];
 let Team_Red = [];
@@ -84,8 +84,6 @@ class Warrior {
     }; 
 };
 
-
-
 /*
  * This function makes two arrays of warriors for each team.
  * Draw which weapon type and draw experience for each warrior.
@@ -109,7 +107,7 @@ function init_army (Team, Team_size) {
         }
         else {
             weapon = 2;
-        }
+        };
 
         let new_warrior = new Warrior(experience, weapon);
         console.log(new_warrior);
@@ -130,8 +128,8 @@ function draw_sequence () {
             let temp = array[i];
             array[i] = array[j];
             array[j] = temp;
-        }
-    }
+        };
+    };
 
     let n_Red = Team_Red.length;
     let n_Blue = Team_Blue.length;
@@ -146,7 +144,7 @@ function draw_sequence () {
 };
 
 function duel (Red_warrior, Blue_warrior) {
-    const probW = [ [0.5, 0.2, 0.1], [0.8, 0.5, 0.2], [0.9, 0.8, 0.5]];
+    const probW = [[0.5, 0.2, 0.1], [0.8, 0.5, 0.2], [0.9, 0.8, 0.5]];
     let prob_Red_W = probW[Red_warrior.weapon][Blue_warrior.weapon];
     let prob_Blue_W = 1 - prob_Red_W;
     let prob_Blue_E = Blue_warrior.experience / (Red_warrior.experience + Blue_warrior.experience);
@@ -170,6 +168,9 @@ function duel (Red_warrior, Blue_warrior) {
     if (Math.random() < prob_Red) {
         // Red won.
         console.log("Red won");
+        Red_warrior.update_health(1);
+        Blue_warrior.update_health(-Red_warrior.weapon * 4);
+        Red_warrior.update_weapon(Blue_warrior);
     }
     else {
         // Blue won.
@@ -189,7 +190,7 @@ function get_num_of_alive_team_members (Team) {
 
     for (i = 0; i < Team.length; i++) {
         if (Team[i].health > 0) {
-        count++;        
+            count++;        
         };
     };
     return count;
@@ -202,7 +203,6 @@ function alive_members (Team) {
             sum++;
         };
     };
-
     return sum;
 };
 
@@ -212,8 +212,6 @@ function average_health(Team) {
         sum += Team[i].health;
         console.log(Team[i].health);
     };
-    console.log(sum);
-    
     return sum/Team.length;
 };
 
@@ -231,10 +229,14 @@ function report_status (iteration) {
     let alive_Blue = alive_members(Team_Blue);
     let average_health_Blue = average_health(Team_Blue);
     let average_experience_Blue = average_experience(Team_Blue);
+    let average_experience_Red = average_experience(Team_Red);
     console.log(`Iteration ${iteration}`)
-    console.log(`Blue Team Warriors alive: ${alive_Blue} Average health on Blue Team: ${average_health_Blue}`);
-    console.log(`Red Team Warriors alive: ${alive_Red} Average health on Red Team: ${average_health_Red}`);
-    console.log(`Blue TeamAverage_experience ${average_experience_Blue}`)
+    console.log(`Blue Team Warriors alive: ${alive_Blue} 
+                 Average health on Blue Team: ${average_health_Blue}`);
+    console.log(`Red Team Warriors alive: ${alive_Red} 
+                 Average health on Red Team: ${average_health_Red}`);
+    console.log(`Blue Team Average experience: ${average_experience_Blue} 
+                 Red Team Average experience: ${average_experience_Red}`);
 };
 
 function war () {
