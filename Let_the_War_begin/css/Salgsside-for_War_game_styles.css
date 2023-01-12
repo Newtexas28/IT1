@@ -3,8 +3,6 @@ body {
     padding: 0;
     color: white;
     background-color: #1d2a35;
-    background-image: url(/Let_the_War_begin/images/Miniature_wargame.jpg);
-    background-size: cover;
     font-family: "Roberto";
 }
 
@@ -41,8 +39,6 @@ main {
 
 footer { 
     grid-area: f; 
-    text-align: center; 
-    margin: auto;
     padding: 10px;
 }
 
@@ -81,6 +77,12 @@ footer {
 .task-links a:hover:not(.active) {
     background-color: #555;
     color: white; 
+}
+
+#ecsample_img {
+    max-width: 500px;
+    border: solid white 3px;
+    border-radius: 75%;
 }
 
 #go_back_arrow {
